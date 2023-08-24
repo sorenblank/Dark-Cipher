@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Cipher</title>
+    <link rel="stylesheet" href="./dist/styles.css"/>
+    
+</head>
+<body class="bg-zinc-900 m-10">
+    <main class="max-w-4xl mx-auto my-0">
+        <h1 class=" font-mono text-slate-300 font-bold">Dark Cipher</h1>
+        <p class="text-base rounded-md bg-zinc-800 text-white p-2 font-mono">An encryption that employs intricate calculations involving code-derived values to encrypt text. This intricate process alters characters in a way that enhances security and confidentiality.</p>
+    <!--code here-->
+        <div class="pb-12 gap-10 flex flex-row">
+            <div id="encryption-section" class="w-1/2">
+                <h2 class="text-slate-300 mb-2 font-mono outline-none">Input</h2>
+                <textarea id="input" class="p-1 font-mono text-base w-full h-44 resize-none border-none rounded-md bg-gray-200 !outline-none" placeholder=" Type your text here ..." required></textarea>
+                
+                <h2 class="text-slate-300 mb-2 font-mono outline-none">Password <small class="text-xs">ps: only letters & numbers</small></h2>
+                <input id="pass" class="m-0 p-1 font-mono text-base w-full h-7 resize-none border-none rounded-md bg-gray-200 !outline-none" required></input>
+            </div>
+
+            <div id="ciphered-section" class="w-1/2">
+                <h2 class="text-slate-300 mb-2 font-mono">Output</h2>
+                <div id="output-text" class="break-words overflow-auto p-1 font-mono text-base w-full h-[274px] resize-none border-none rounded-md bg-gray-200 !outline-none"></div>
+            </div>
+        </div>
+        <div id="buttons" class="flex justify-center gap-8">
+            <button id="encrypt" class="bg-red-500 border-none outline-none px-6 py-3 font-mono text-base rounded-md cursor-pointer hover:bg-red-600">Encrypt</button>
+            <button id="decrypt" class="bg-green-500 border-none outline-none px-6 py-3 font-mono text-base rounded-md cursor-pointer hover:bg-green-600">Decrypt</button>
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
