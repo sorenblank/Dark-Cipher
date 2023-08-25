@@ -13,6 +13,5 @@ body {
 
   #output-text {
     overflow-y: auto; /* Always show a vertical scrollbar */
-    scrollbar-width:none; 
     max-width:400px;
   }
