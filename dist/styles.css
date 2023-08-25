@@ -164,16 +164,16 @@
   justify-content: center;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
 .gap-10{
   gap: 2.5rem;
 }
 
 .gap-8{
   gap: 2rem;
-}
-
-.overflow-auto{
-  overflow: auto;
 }
 
 .break-words{
@@ -273,14 +273,20 @@
   outline-offset: 2px;
 }
 
-.bg{
-  background-color: #222327;
+*{
+  box-sizing: border-box;
 }
 
-#output-text ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-  /* make scrollbar transparent */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#output-text {
+  overflow-y: auto;
+  /* Always show a vertical scrollbar */
+  scrollbar-width:none;
+  max-width:400px;
 }
 
 .hover\:bg-green-600:hover{
@@ -292,4 +298,3 @@
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
-

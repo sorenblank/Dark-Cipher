@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg{
-    background-color: #222327;
+*{
+    box-sizing: border-box;
 }
+body {
+    margin: 0;
+    padding: 0;
+  }
 
-#output-text ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
 
+  #output-text {
+    overflow-y: auto; /* Always show a vertical scrollbar */
+    scrollbar-width:none; 
+    max-width:400px;
+  }
